@@ -1,0 +1,73 @@
+/* Styling for Sections */
+.section-container {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #e0f7fa 0%, #fff3e0 100%);
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a202c;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+.form-style {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Input and Select Styles */
+.input-style, .select-style {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.input-style:focus, .select-style:focus {
+    border-color: #3b82f6;
+}
+
+/* Button Styling */
+.btn-style {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 1.5rem auto 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-style:hover {
+    background-color: #3b82f6;
+}
+
+/* Result Styling */
+.result-style {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
