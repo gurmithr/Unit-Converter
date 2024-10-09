@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-r from-blue-50 to-blue-100 text-gray-900 min-h-screen flex flex-col">
+
+    <!-- Navigation Bar section -->
+    <nav class="bg-blue-600 p-4 shadow-md">
+        <ul class="flex justify-center space-x-8 text-white text-lg font-semibold">
+            <li><a href="#weight" class="hover:underline">Weight</a></li>
+            <li><a href="#distance" class="hover:underline">Distance</a></li>
+            <li><a href="#temperature" class="hover:underline">Temperature</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Sections for Conversion -->
+    
+    <!-- Weight Converter Section -->
+    <section id="weight" class="section-container">
+        <h2 class="section-title">Weight Converter (kg ↔ lb)</h2>
+        <form id="weightForm" class="form-style">
+            <input id="weightInput" type="text" class="input-style" placeholder="Enter weights (comma separated)" required>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <select id="weightFrom" class="select-style">
+                    <option value="kg">Kilograms</option>
+                    <option value="lb">Pounds</option>
+                </select>
+                <select id="weightTo" class="select-style">
+                    <option value="lb">Pounds</option>
+                    <option value="kg">Kilograms</option>
+                </select>
+            </div>
+            <button type="button" onclick="convertWeight()" class="btn-style">Convert</button>
+            <p id="weightResult" class="result-style"></p>
+        </form>
+    </section>
+
+    <!-- Distance Converter Section -->
+    <section id="distance" class="section-container">
+        <h2 class="section-title">Distance Converter (km ↔ miles)</h2>
+        <form id="distanceForm" class="form-style">
+            <input id="distanceInput" type="text" class="input-style" placeholder="Enter distances (comma separated)" required>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <select id="distanceFrom" class="select-style">
+                    <option value="km">Kilometers</option>
+                    <option value="miles">Miles</option>
+                </select>
+                <select id="distanceTo" class="select-style">
+                    <option value="miles">Miles</option>
+                    <option value="km">Kilometers</option>
+                </select>
+            </div>
+            <button type="button" onclick="convertDistance()" class="btn-style">Convert</button>
+            <p id="distanceResult" class="result-style"></p>
+        </form>
+    </section>
+
+    <!-- Temperature Converter Section -->
+    <section id="temperature" class="section-container">
+        <h2 class="section-title">Temperature Converter (°C ↔ °F)</h2>
+        <form id="temperatureForm" class="form-style">
+            <input id="temperatureInput" type="text" class="input-style" placeholder="Enter temperatures (comma separated)" required>
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                <select id="temperatureFrom" class="select-style">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                </select>
+                <select id="temperatureTo" class="select-style">
+                    <option value="F">Fahrenheit</option>
+                    <option value="C">Celsius</option>
+                </select>
+            </div>
+            <button type="button" onclick="convertTemperature()" class="btn-style">Convert</button>
+            <p id="temperatureResult" class="result-style"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
